@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function(){
+            $("#btn2").click(function(){
+                const var1=localStorage.getItem("data");
+                const obj1=JSON.parse(var1);
+                $("#fname").val(obj1.email);
+                $("#lname").val(obj1.email);
+                $("#email").val(obj1.email);
+                $("#mobno").val(obj1.email);
+            })
+        })
+    </script>
+
+    <button type="display" id="btn2">display</button><br>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname"><br>
+    <label for="email">email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <label for="mobno">Mob no:</label><br>
+    <input type="text" id="mobno" name="mobno"><br><br>
+    
+</body>
+
+</html>
