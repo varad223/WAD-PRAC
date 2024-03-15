@@ -1,17 +1,16 @@
-const express = require('express');
+const express = require('express');  
 const app = express();
-//app.use(express.static('public'));
+//app.use(express.static('public')); <-- index.html needed, from .get we can open specific files
 
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/nav.html')
+app.get('/',(req,res)=>{
+    res.sendFile(__dirname+'/public/nav.html')
 })
-app.get('/about', (req, res) => {
-  res.sendFile(__dirname + '/public/about.html')
+app.get('/signup',(req,res)=>{
+    res.sendFile(__dirname+'/public/signup.html')
 })
-app.get('/contact', (req, res) => {
-  res.sendFile(__dirname + '/public/contact.html')
+app.get('/login',(req,res)=>{
+    res.sendFile(__dirname+'/public/navbar.html')
 })
-app.get('/index', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html')
-})
+
 app.listen(5000);
+
