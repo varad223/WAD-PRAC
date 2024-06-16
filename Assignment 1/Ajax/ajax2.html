@@ -14,10 +14,10 @@
             $("#btn2").click(function(){
                 const var1=localStorage.getItem("data");
                 const obj1=JSON.parse(var1);
-                $("#fname").val(obj1.email);
-                $("#lname").val(obj1.email);
+                $("#fname").val(obj1.fname);
+                $("#lname").val(obj1.lname);
                 $("#email").val(obj1.email);
-                $("#mobno").val(obj1.email);
+                $("#mobno").val(obj1.mobno);
             })
         })
     </script>

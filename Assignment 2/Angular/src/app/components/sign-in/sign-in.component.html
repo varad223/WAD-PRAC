@@ -1,45 +1,30 @@
-<form>
-    <!-- class named "container" is assigned to div -->
-    <div class="container">
-        <h1>Register</h1>
-        <p>Kindly fill in this form to register.</p>
-        <label for="username"><b>Username</b></label>
-        <input
-            type="text"
-            placeholder="Enter username"
-            name="username"
-            id="username"
-            required />
+<div>
+    <div class="form">
+        <label for="">email</label>
+        <input type="email"[(ngModel)]="user.email" >
+        <label for="">password</label>
+        <input type="password"[(ngModel)]="user.password" >
 
-        <label for="email"><b>Email</b></label>
-        <input
-            type="text"
-            placeholder="Enter Email"
-            name="email"
-            id="email"
-            required />
+        <button (click)="register()">submit</button>
+        <!-- <p>{{name}}</p> -->
+    </div>
 
-        <label for="pwd"><b>Password</b></label>
-        <input
-            type="password"
-            placeholder="Enter Password"
-            name="pwd"
-            id="pwd"
-            required />
-
-        <label for="pwd-repeat"><b>Repeat Password</b></label>
-        <input
-            type="password"
-            placeholder="Repeat Password"
-            name="pwd-repeat"
-            id="pwd-repeat"
-            required />
+    <!-- <div *ngIf="displayname; then trueblock; else elseblock">
 
     </div>
 
-    <div>
-        <button (click)="Login()">Register</button>
-    </div>
-</form>
 
-<p>sign-in works!</p>
+    <ng-template #trueblock>
+        reagegae
+    </ng-template>
+    <ng-template #elseblock>
+        elseblock
+    </ng-template>
+
+
+    <div [ngSwitch]="switchname">
+        <div *ngSwitchCase="'1'">1</div>
+        <div *ngSwitchCase="'2'">2</div>
+        <div *ngSwitchCase="'3'">3</div>     
+    </div> -->
+</div>
